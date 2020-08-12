@@ -1,1 +1,1 @@
-web: gunicorn run:tourist_app
+web: gunicorn "app:create_app()"
