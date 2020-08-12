@@ -6,8 +6,7 @@ import requests
 
 
 
-
-tourist_app = Flask(__name__)
+app = Flask(__name__)
 
 destinations=["Paris,France","Shanghai,China","Los Angeles,USA","Sao Paulo, Brazil", "Cairo,Egypt","New York,USA", "London,UK"]
 test_traveler= ["Erin Wilkes", "Shanghai,China", ["historical site", "art"]]
@@ -149,4 +148,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    tourist_app.run(debug=True)
+    app.run(debug=True)
