@@ -7,7 +7,7 @@ import requests
 
 
 
-app = Flask(__name__)
+tourist_app = Flask(__name__)
 
 destinations=["Paris,France","Shanghai,China","Los Angeles,USA","Sao Paulo, Brazil", "Cairo,Egypt","New York,USA", "London,UK"]
 test_traveler= ["Erin Wilkes", "Shanghai,China", ["historical site", "art"]]
@@ -141,12 +141,7 @@ def predict():
         output = find_attractions(destination, [interests])
 
     
-        #results = print(output)
 
-        #res = jsonify(output)
-
-#la_arts=find_attractions("Los Angeles,USA",["art"]) 
-#print(la_arts)
         
     return render_template('index.html', prediction_text='Our recommendation for your selection is =  {}'.format(output))
 
@@ -154,4 +149,4 @@ def predict():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    tourist_app.run(debug=True)
