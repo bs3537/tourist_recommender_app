@@ -1,10 +1,5 @@
 from flask import Flask, request, redirect, url_for, flash, jsonify, render_template
 
-import json
-
-import requests
-
-
 
 app = Flask(__name__)
 
