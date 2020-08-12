@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tourist Attraction Recommender App</title>
+  <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+  <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />-->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<center>
+	<!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+	<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>-->
+ 
+	<h1>Tourist Attraction Recommender App</h1>
+	<h2>Created by Bhavya Sharma</h2>
+
+<br>
+	 
+<p> This app uses Python Lists and Functions to retrieve the data for form inputs. 
+
+	
+<br><br>
+
+
+
+    <form action="{{ url_for('predict')}}"method="post">
+
+        <label for="Destination"></label>Select the destination</label>
+<br>
+        <select id="Destination" name="Destination">
+                <option value="New York,USA">New York,USA</option>
+                <option value="London,UK">London,UK</option>
+                <option value="Paris,France">Paris,France</option>
+                <option value="Los Angeles,USA">Los Angeles,USA</option>
+                <option value="Shanghai,China">Shanghai,China</option>
+                <option value="Sao Paulo, Brazil">Sao Paulo, Brazil</option>
+                <option value="Cairo,Egypt">Cairo,Egypt</option>
+        </select>
+
+    	
+	<br>
+        <br>
+
+
+
+        <label for="Interests"></label>Select the Interests</label>
+<br>
+        <select id="Interests" name="Interests">
+                <option value="beach">beach</option>
+                <option value="art">art</option>
+                <option value="museum">museum</option>
+                <option value="historical site">historical site</option>
+                <option value="monument">monument</option>
+                <option value="zoo">zoo</option>
+                <option value="skyscraper">skyscraper</option>
+                <option value="viewing deck">viewing deck</option>
+
+        </select>
+
+
+	<br>
+        <br>
+<style>
+.button {
+  border: none;
+  background-color: #008CBA;
+  padding: 10px 32px;
+  text-align: center;
+  color: white;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>     
+        <button type="submit" class="button">Submit</button>
+
+    </form>
+
+   <br>
+   <br>
+   <div>
+   {{ prediction_text }}
+   </div>
+
+	<br>
+        <br>
+        </p>
+</div>
+	
+	<img src="https://www.traveller.com.au/content/dam/images/h/0/z/6/5/e/image.related.articleLeadwide.620x349.h10di4.png/1526953067684.jpg" alt="Tourist">
+	 
+
+ </div>
+</body>
+</html>
+

@@ -1,0 +1,77 @@
+body {
+    background-color: whitesmoke;
+  }
+  
+  header {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  h1 {
+    font-size: 36px;
+    padding: 15px;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    font-family: 'Roboto';
+  }
+  
+  h2 {
+    font-size: 24px;
+    padding: 15px;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+  }
+  
+  h3 {
+    font-size: 20px;
+    padding: 15px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: 500;
+    line-height: 2.7;
+    letter-spacing: 0.8px;
+  }
+
+  p {
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #242f44;
+    font-family: 'Roboto';
+  }
+
+  label {
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Roboto';
+  }
+
+  form {
+    position: relative;
+    width=740px;
+    height=498px
+    margin=0 auto;
+    background=whitesmoke;
+    font-family: 'Roboto';
+  }
+
+
+  button {
+    font-size: 14px;
+    color: whitesmoke;
+    background-color: #6e3061;
+    text-align: center;
+    padding: 15px 30px;
+    font-family: 'Roboto';
+  }
+
+  div {
+    font-size: 14px;
+    color: whitesmoke;
+    font-family: 'Roboto';
+  }
+  
+  
+  
+  
